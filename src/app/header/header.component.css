@@ -1,0 +1,14 @@
+.showBanner {
+    width: 100% !important;
+}
+
+.hideBanner {
+    width: 0% !important;
+}
+
+.btn-outline-success:hover{
+    color:#fff !important;
+}
+span{
+    text-align: center;
+}

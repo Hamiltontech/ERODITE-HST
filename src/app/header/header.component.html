@@ -1,0 +1,35 @@
+<div class="header_section">
+    <div class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="col-md-3">
+                <div class="logo"><a href="/"><img src="assets/images/erodiet logo.png"></a></div>
+            </div>
+            <div class="col-md-9 d-flex align-items-center">
+                <div class="col-12 menu_text d-flex flex-row-reverse">
+                    <ul>
+                        <li class=" btn  text-secondary m-1 justify-content-center text-cemter " routerLink="/home" > <a class=" "  ><span>Home</span></a></li>
+                        <li class=" btn  text-secondary m-1 justify-content-center text-cemter" routerLink="/summary"> <a class=" "  ><span>Project Summary</span></a></li>
+                        <li class=" btn  text-secondary m-1 justify-content-center text-cemter" routerLink="/partners"> <a class=" "  ><span>Partners</span></a></li>
+                        <li class=" btn  text-secondary m-1 justify-content-center text-cemter" routerLink="/news"> <a class=" "  ><span>News</span></a></li>
+                        <!-- <li class=" btn btn-outline-success text-secondary m-1 justify-content-center text-cemter" routerLink="/events"> <a class=" "  ><span>Events<</span>/a></li> -->
+                        <div id="myNav" class="overlay" [ngClass]="
+                            {'showBanner':openNav,
+                            'hideBanner':!openNav
+                        }">
+                            <a href="javascript:void(0)" class="closebtn" (click)="closeOpenNav()">&times;</a>
+                            <div class="overlay-content">
+                                <a routerLink="/home" >Home</a>
+                                <a routerLink="/summary" >Project Summary</a>
+                                <a routerLink="/partners" >Partners</a>
+                                <a routerLink="/news" >News</a>
+                                <!-- <a routerLink="/events" >Events</a> -->
+                            </div>
+                        </div>
+                        <span  class="justify-self-end" (click)="closeOpenNav()"><img
+                                src="assets/images/toggle.png" class=" "></span>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
